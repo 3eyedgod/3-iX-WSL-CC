@@ -70,7 +70,7 @@ sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="3eyedgod"/g' ~/.zshrc
 ```
 
 Add the following aliases to .zshrc file
-```console
+```zsh
 alias ixcc="cd ~/3-iX-WSL-JG;./3-iX-CC.sh"
 alias 1up="sudo hwclock -s && sudo apt-get update && sudo apt-get full-upgrade -y && sudo apt-get autoremove -y"
 alias sums="cd ~/3-iX-WSL-JG/SUMS/"
