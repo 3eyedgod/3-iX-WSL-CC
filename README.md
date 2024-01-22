@@ -35,7 +35,7 @@ In order to run some scripts, Certain dependancies must be installed on the WSL 
 - [[git]](https://linux.die.net/man/1/git) - Git is a fast, scalable, distributed revision control system with an unusually rich command set that provides both high-level operations and full access to internals
 - [[zsh]](https://linux.die.net/man/1/zsh) - The Z shell
 
-## Installation
+## Setup
 
 [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) must be installed in on any Windows PC
 
