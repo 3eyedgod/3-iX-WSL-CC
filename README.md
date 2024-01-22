@@ -45,6 +45,6 @@ wsl --install
 ```
 
 Once your Ubuntu user is setup update the repositories by typing the following:
-```shell
+```zsh
 sudo apt-get update && sudo apt-get full-upgrade -y
 ```
