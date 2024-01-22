@@ -5,7 +5,7 @@ These scripts are used for Client Configuration (CC) and Sofware Quality Control
 
 - Automating Redbook Qualified Configuration
 - Log And Archive Configuration Results
-- Gather system information and Debug for SWQC
+- Gather System Information & Debug Files To Speed Up The SWQC Process
 
 ## Features
 
