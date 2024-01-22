@@ -34,3 +34,17 @@ In order to run some scripts, Certain dependancies must be installed on the WSL 
 - [[curl]](https://linux.die.net/man/1/curl) - Transfer a URL
 - [[git]](https://linux.die.net/man/1/git) - Git is a fast, scalable, distributed revision control system with an unusually rich command set that provides both high-level operations and full access to internals
 - [[zsh]](https://linux.die.net/man/1/zsh) - The Z shell
+
+## Installation
+
+WSL must be installed in on any Windows PC
+
+Open up a PowerShell command prompt (Run as Administrator) & type the following:
+```powershell
+wsl --install
+```
+
+Once your Ubuntu user is setup update the repositories by typing the following:
+```console
+sudo apt-get update && sudo apt-get full-upgrade -y
+```
