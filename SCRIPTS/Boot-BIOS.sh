@@ -22,7 +22,7 @@
 #            Main Script              #
 ######################################
 
-KEY_FILE=~/3-iX-WSL-JG/SCRIPTS/KEY.txt
+KEY_FILE=~/3-iX-WSL-CC/SCRIPTS/KEY.txt
 
 # Prompt user to confirm if they want to set the bootflag to force BIOS
 dialog --yesno "Do you want to set the bootflag to force BIOS?" 7 30

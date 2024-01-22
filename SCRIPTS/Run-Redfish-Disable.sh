@@ -9,7 +9,7 @@
 
 mkdir OUTPUT/redfish-disable-tmp
 
-cp ~/3-iX-WSL-JG/SCRIPTS/KEY.txt OUTPUT/redfish-disable-tmp/Input.txt
+cp ~/3-iX-WSL-CC/SCRIPTS/KEY.txt OUTPUT/redfish-disable-tmp/Input.txt
 
 FILE=OUTPUT/redfish-disable-tmp/Input.txt
 IPMI=""
@@ -30,21 +30,21 @@ while read -r LINE; do
 
     # Using sed to add our variables to scripts being run on remote system
 
-    sed -i "s/IPMIIP/$IPMI/g" ~/3-iX-WSL-JG/SCRIPTS/VALIDATION/Redfish-Disable.sh # updating Redfish-Disable.sh via sed to supply IPMI IP
+    sed -i "s/IPMIIP/$IPMI/g" ~/3-iX-WSL-CC/SCRIPTS/VALIDATION/Redfish-Disable.sh # updating Redfish-Disable.sh via sed to supply IPMI IP
 
-    sed -i "s/IPMIPASSWD/$IPMIPASSWD/g" ~/3-iX-WSL-JG/SCRIPTS/VALIDATION/Redfish-Disable.sh # updating Redfish-Disable.sh to via sed to supply IPMI Password
+    sed -i "s/IPMIPASSWD/$IPMIPASSWD/g" ~/3-iX-WSL-CC/SCRIPTS/VALIDATION/Redfish-Disable.sh # updating Redfish-Disable.sh to via sed to supply IPMI Password
 
     echo "=========================================================================="
 
     # Executing script on remote server over ssh using sshpass
 
-    sshpass <~/3-iX-WSL-JG/SCRIPTS/VALIDATION/Redfish-Disable.sh -vp abcd1234 ssh -tt -oStrictHostKeyChecking=no root@"$GUIIP" -yes 
+    sshpass <~/3-iX-WSL-CC/SCRIPTS/VALIDATION/Redfish-Disable.sh -vp abcd1234 ssh -tt -oStrictHostKeyChecking=no root@"$GUIIP" -yes 
 
     # Cleanup of script for reusability
 
-    sed -i "s/$IPMI/IPMIIP/g" ~/3-iX-WSL-JG/SCRIPTS/VALIDATION/Redfish-Disable.sh # Reverting sed changed
+    sed -i "s/$IPMI/IPMIIP/g" ~/3-iX-WSL-CC/SCRIPTS/VALIDATION/Redfish-Disable.sh # Reverting sed changed
 
-    sed -i "s/$IPMIPASSWD/IPMIPASSWD/g" ~/3-iX-WSL-JG/SCRIPTS/VALIDATION/Redfish-Disable.sh # Reverting sed changed
+    sed -i "s/$IPMIPASSWD/IPMIPASSWD/g" ~/3-iX-WSL-CC/SCRIPTS/VALIDATION/Redfish-Disable.sh # Reverting sed changed
 
 done
 

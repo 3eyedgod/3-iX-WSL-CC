@@ -51,7 +51,7 @@ clear
 mkdir OUTPUT/val-tmp/BIOS-Files
 mkdir OUTPUT/val-tmp/Event-Logs
 
-cp ~/3-iX-WSL-JG/SCRIPTS/KEY.txt OUTPUT/val-tmp/Input.txt
+cp ~/3-iX-WSL-CC/SCRIPTS/KEY.txt OUTPUT/val-tmp/Input.txt
 
 FILE=OUTPUT/val-tmp/Input.txt
 exec 3<&0

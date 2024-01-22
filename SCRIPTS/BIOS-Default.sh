@@ -57,7 +57,7 @@ rm -rf OUTPUT/"$ORDER"-BIOS-DEFAULT.tar.gz OUTPUT/"$ORDER"-BIOS-DEFAULT
 
 clear
 
-cp ~/3-iX-WSL-JG/SCRIPTS/KEY.txt OUTPUT/bios-tmp/Input.txt
+cp ~/3-iX-WSL-CC/SCRIPTS/KEY.txt OUTPUT/bios-tmp/Input.txt
 
 FILE=OUTPUT/bios-tmp/Input.txt
 SERIAL=""

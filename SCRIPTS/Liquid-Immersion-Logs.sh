@@ -70,7 +70,7 @@ echo "==========================================================================
 
 # Grabbring serial number from KEY.txt
 
-cp ~/3-iX-WSL-JG/SCRIPTS/KEY.txt OUTPUT/liquid-tmp/Input.txt
+cp ~/3-iX-WSL-CC/SCRIPTS/KEY.txt OUTPUT/liquid-tmp/Input.txt
 
 FILE=OUTPUT/liquid-tmp/Input.txt
 SERIAL=""

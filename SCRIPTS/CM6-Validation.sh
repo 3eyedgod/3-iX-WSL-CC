@@ -8,7 +8,7 @@
 
 # Grabbring serial number & ip from Input.txt
 
-FILE=~/3-iX-WSL-JG/SCRIPTS/KEY.txt
+FILE=~/3-iX-WSL-CC/SCRIPTS/KEY.txt
 IP=""
 exec 3<&0
 exec 0<$FILE
@@ -18,7 +18,7 @@ while read -r line; do
     # Run validation script CM6-Flash.sh
     ssh-keygen -f "/home/$USER/.ssh/known_hosts" -R "$IP"
 
-    cat ~/3-iX-WSL-JG/SCRIPTS/VALIDATION/CM6-Flash.sh | sshpass -vp abcd1234 ssh -tt -oStrictHostKeyChecking=no root@"$IP"
+    cat ~/3-iX-WSL-CC/SCRIPTS/VALIDATION/CM6-Flash.sh | sshpass -vp abcd1234 ssh -tt -oStrictHostKeyChecking=no root@"$IP"
 
 done
 

@@ -16,7 +16,7 @@ dialog --inputbox "Enter Order Number" 10 60 2>OUTPUT/diff-tmp/Order-Num.txt
 clear
 ORDER=$(cat OUTPUT/diff-tmp/Order-Num.txt)
 
-cp ~/3-iX-WSL-JG/SCRIPTS/KEY.txt OUTPUT/diff-tmp/Input.txt
+cp ~/3-iX-WSL-CC/SCRIPTS/KEY.txt OUTPUT/diff-tmp/Input.txt
 
 FILE=OUTPUT/diff-tmp/Input.txt
 while read -r LINE; do

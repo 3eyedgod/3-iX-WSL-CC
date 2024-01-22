@@ -49,7 +49,7 @@ touch OUTPUT/sensor-tmp/Field2-Output.txt
 touch OUTPUT/sensor-tmp/Field3-Output.txt
 touch OUTPUT/sensor-tmp/Field4-Output.txt
 
-cp ~/3-iX-WSL-JG/SCRIPTS/KEY.txt OUTPUT/ix-tmp/Input.txt
+cp ~/3-iX-WSL-CC/SCRIPTS/KEY.txt OUTPUT/ix-tmp/Input.txt
 
 FILE=OUTPUT/ix-tmp/Input.txt
 SERIAL=""

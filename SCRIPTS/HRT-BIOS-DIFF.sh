@@ -30,7 +30,7 @@ clear
 
 echo "==========================================================================" >>OUTPUT/diff-tmp/Line-Output.txt
 
-cp ~/3-iX-WSL-JG/SCRIPTS/KEY.txt OUTPUT/diff-tmp/Input.txt
+cp ~/3-iX-WSL-CC/SCRIPTS/KEY.txt OUTPUT/diff-tmp/Input.txt
 
 FILE=OUTPUT/diff-tmp/Input.txt
 SERIAL=" "
@@ -45,7 +45,7 @@ while read -r LINE; do
     # Diffing Files
 
     echo "------------------------------------------------------$SERIAL------------------------------------------------------" >>OUTPUT/diff-tmp/"$ORDER"-DIFF-RESULTS.txt
-    diff -y -W 200 --suppress-common-lines ~/3-iX-WSL-JG/SWQC/hrt-liquid-redfish/HRT_Liquid_BIOS_Golden_Readable.json ~/3-iX-WSL-JG/SWQC/hrt-liquid-redfish/BiosCfg/"$SERIAL"_BIOS_Settings.json >>OUTPUT/diff-tmp/"$ORDER"-DIFF-RESULTS.txt
+    diff -y -W 200 --suppress-common-lines ~/3-iX-WSL-CC/SWQC/hrt-liquid-redfish/HRT_Liquid_BIOS_Golden_Readable.json ~/3-iX-WSL-CC/SWQC/hrt-liquid-redfish/BiosCfg/"$SERIAL"_BIOS_Settings.json >>OUTPUT/diff-tmp/"$ORDER"-DIFF-RESULTS.txt
 
     echo "[HRT BIOS DIFF DONE FOR $SERIAL]" | pv -qlL3
 
@@ -54,9 +54,9 @@ done
 echo "==========================================================================" >>OUTPUT/diff-tmp/Line-Output.txt
 
 # Clean Up
-cp ~/3-iX-WSL-JG/SWQC/hrt-liquid-redfish/HRT_Liquid_BIOS_Golden_Readable.json OUTPUT/diff-tmp
-mv ~/3-iX-WSL-JG/SWQC/hrt-liquid-redfish/BiosCfg OUTPUT/
-mv ~/3-iX-WSL-JG/SWQC/hrt-liquid-redfish/BiosCfg.tar.gz OUTPUT/
+cp ~/3-iX-WSL-CC/SWQC/hrt-liquid-redfish/HRT_Liquid_BIOS_Golden_Readable.json OUTPUT/diff-tmp
+mv ~/3-iX-WSL-CC/SWQC/hrt-liquid-redfish/BiosCfg OUTPUT/
+mv ~/3-iX-WSL-CC/SWQC/hrt-liquid-redfish/BiosCfg.tar.gz OUTPUT/
 mv OUTPUT/diff-tmp OUTPUT/"$ORDER"-HRT-DIFF
 tar cfz OUTPUT/"$ORDER-HRT-DIFF.tar.gz" OUTPUT/"$ORDER"-HRT-DIFF
 

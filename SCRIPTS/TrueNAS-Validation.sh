@@ -12,7 +12,7 @@ mkdir OUTPUT/tnas-tmp
 
 # Grabbring serial number & ip from IP.txt
 
-cp ~/3-iX-WSL-JG/SCRIPTS/KEY.txt OUTPUT/tnas-tmp/Input.txt
+cp ~/3-iX-WSL-CC/SCRIPTS/KEY.txt OUTPUT/tnas-tmp/Input.txt
 
 FILE=OUTPUT/tnas-tmp/Input.txt
 SERIAL=""
@@ -61,7 +61,7 @@ while read -r LINE; do
 
     # Executing script on remote system
 
-    sshpass <~/3-iX-WSL-JG/SWQC/SWQC-"$MODELTYPE".sh -vp abcd1234 ssh -tt -oStrictHostKeyChecking=no root@"$IP" -yes
+    sshpass <~/3-iX-WSL-CC/SWQC/SWQC-"$MODELTYPE".sh -vp abcd1234 ssh -tt -oStrictHostKeyChecking=no root@"$IP" -yes
 
 done
 

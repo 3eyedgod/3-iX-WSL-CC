@@ -35,7 +35,7 @@ VRSGNPWD=cm7ujR33F5P5mLC43rdm
 
 echo "==========================================================================" >>OUTPUT/VRSGN-tmp/LINE-Output.txt
 
-cp ~/3-iX-WSL-JG/SCRIPTS/KEY.txt OUTPUT/VRSGN-tmp/Input.txt
+cp ~/3-iX-WSL-CC/SCRIPTS/KEY.txt OUTPUT/VRSGN-tmp/Input.txt
 
 FILE=OUTPUT/VRSGN-tmp/Input.txt
 SERIAL=""
@@ -97,7 +97,7 @@ while read -r LINE; do
 
   # Collecting STD Password
 
-  psql -h host -U user -d passwd -c "select c.name, a.model, a.serial, a.rma, a.revision, a.support_number from production_part a, production_system b, production_type c, production_configuration d where a.system_id = b.id and a.type_id = c.id and b.config_name_id = d.id and b.system_serial = '$SERIAL' order by b.system_serial, a.type_id, a.model, a.serial;" >~/3-iX-WSL-JG/OUTPUT/VRSGN-tmp/"$SERIAL"-STD-Parts.txt
+  psql -h host -U user -d passwd -c "select c.name, a.model, a.serial, a.rma, a.revision, a.support_number from production_part a, production_system b, production_type c, production_configuration d where a.system_id = b.id and a.type_id = c.id and b.config_name_id = d.id and b.system_serial = '$SERIAL' order by b.system_serial, a.type_id, a.model, a.serial;" >~/3-iX-WSL-CC/OUTPUT/VRSGN-tmp/"$SERIAL"-STD-Parts.txt
   cat < OUTPUT/VRSGN-tmp/"$SERIAL"-STD-Parts.txt | grep "Unique Password" | cut -d "|" -f3 | xargs >OUTPUT/VRSGN-tmp/"$SERIAL"-IPMI-Password.txt
   IPMIPASSWORD=$(cat OUTPUT/VRSGN-tmp/"$SERIAL"-IPMI-Password.txt)
 
