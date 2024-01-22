@@ -23,11 +23,11 @@ These scripts are used for Client Configuration (CC) and Sofware Quality Control
 
 In order to run some scripts, Certain dependancies must be installed on the WSL Ubuntu VM:
 
-- [IPMITOOL](https://linux.die.net/man/1/ipmitool) - Utility for controlling IPMI-enabled devices
+- [[ IPMITOOL ]](https://linux.die.net/man/1/ipmitool) - Utility for controlling IPMI-enabled devices
 - [SSHPASS](https://linux.die.net/man/1/sshpass) - Noninteractive ssh password provider
 - [PV](https://linux.die.net/man/1/pv) - Monitor the progress of data through a pipe
 - [POSTGRESQL-CLIENT](https://ubuntu.com/server/docs/databases-postgresql) - PostgreSQL (also known as Postgres) is an object-relational database system that has the features of traditional commercial database systems with enhancements to be found in next-generation database management systems (DBMS)
-- [SQLITE#](https://linux.die.net/man/1/sqlite3) - A command line interface for SQLite version 3
+- [SQLITE3](https://linux.die.net/man/1/sqlite3) - A command line interface for SQLite version 3
 - [PYTHON](https://www.python.org/downloads/) - Python is a programming language that lets you work more quickly and integrate your systems more effectively
 - [PDFGREP](https://pdfgrep.org/) - A commandline utility to search text in PDF files
 - [LYNX](https://linux.die.net/man/1/lynx) - A general purpose distributed information browser for the World Wide Web
