@@ -48,3 +48,12 @@ Once your Ubuntu user is setup update the repositories by typing the following:
 ```bash
 sudo apt-get update && sudo apt-get full-upgrade -y
 ```
+
+Install required dependancies with:
+```bash
+sudo apt install ipmitool sshpass pv postgresql-client sqlite3 python3 dialog pdfgrep lynx curl git zsh -y
+```
+
+
+
+
