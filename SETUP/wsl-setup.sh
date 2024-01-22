@@ -5,7 +5,7 @@
 
 # Changing Permission
 
-sudo chmod 777 ~/ixsystems-cc/ 
+sudo chmod 755 ~/3-iX-WSL-CC/ 
 
 # Updating Ubuntu
 
@@ -21,7 +21,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 # Copying theme over to oh-my-zsh
 
-cp ~/ixsystems-cc/SETUP/3eyedgod.zsh-theme ~/.oh-my-zsh/themes/
+cp ~/3-iX-WSL-CC/SETUP/3eyedgod.zsh-theme ~/.oh-my-zsh/themes/
 
 # Changing Theme On .zshrc File
 
@@ -29,4 +29,3 @@ sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="3eyedgod"/g' ~/.zshrc
 
 
 exit
-
