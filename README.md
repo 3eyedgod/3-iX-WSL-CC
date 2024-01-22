@@ -37,7 +37,7 @@ In order to run some scripts, Certain dependancies must be installed on the WSL 
 
 ## Installation
 
-WSL must be installed in on any Windows PC
+[WSL](https://learn.microsoft.com/en-us/windows/wsl/install) must be installed in on any Windows PC
 
 Open up a PowerShell command prompt (Run as Administrator) & type the following:
 ```powershell
@@ -54,12 +54,12 @@ Install required dependancies with:
 sudo apt install ipmitool sshpass pv postgresql-client sqlite3 python3 dialog pdfgrep lynx curl git zsh -y
 ```
 
-Run the following command to install oh-my-zsh
+Run the following command to install [oh-my-zsh](https://ohmyz.sh/)
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" -y
 ```
 
-Copy theme over to oh-my-zsh
+Copy theme over to [oh-my-zsh](https://ohmyz.sh/)
 ```bash
 cp ~/3-iX-WSL-CC/SETUP/3eyedgod.zsh-theme ~/.oh-my-zsh/themes/
 ```
