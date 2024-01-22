@@ -1,6 +1,6 @@
 # 3-iX-WSL-JG
 
-![IXSYSTEMS INC.](https://raw.githubusercontent.com/3eyedgod/3-iX-WSL-JG/IMAGES/iX_Logo.png)
+![IXSYSTEMS INC.](https://raw.githubusercontent.com/3eyedgod/3-iX-WSL-JG/blob/main/IMAGES/iX_Logo.png)
 
 ## _Automation Scripts for TrueNAS Systems & Custom Servers_
 
