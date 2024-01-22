@@ -15,9 +15,9 @@ These scripts are used for Client Configuration (CC) and Sofware Quality Control
 - Supermicro Update Manager ([SUM](https://www.supermicro.com/en/solutions/management-software/supermicro-update-manager)) Intergration For Batch BIOS Configuration & [OOB/DCMS](https://store.supermicro.com/us_en/software/software-license-key-activation-usage) License Activation
 - Added Logic For Error Checking And Accurate Results
  
-## Tech
+## Dependencies
 
-In order to run some scripts, Certain dependancies must be install into the WSL Ubuntu VM:
+In order to run some scripts, Certain dependancies must be installed on the WSL Ubuntu VM:
 
 - [[ipmitool]](https://linux.die.net/man/1/ipmitool) - utility for controlling IPMI-enabled devices 
 - [[sshpass]](https://linux.die.net/man/1/sshpass) - noninteractive ssh password provider 
