@@ -54,6 +54,17 @@ Install required dependancies with:
 sudo apt install ipmitool sshpass pv postgresql-client sqlite3 python3 dialog pdfgrep lynx curl git zsh -y
 ```
 
+Run the following command to install oh-my-zsh
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" -y
+```
 
+Copy theme over to oh-my-zsh
+```bash
+cp ~/3-iX-WSL-CC/SETUP/3eyedgod.zsh-theme ~/.oh-my-zsh/themes/
+```
 
-
+Changing theme on .zshrc file
+```bash
+sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="3eyedgod"/g' ~/.zshrc
+```
