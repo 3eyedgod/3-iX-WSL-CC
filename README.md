@@ -15,7 +15,7 @@ These scripts are used for Client Configuration (CC) and Sofware Quality Control
 
 - Multi Script Menu
 - WSL Based & Can Be Used With Any Windows System Running ([Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/about))
-- Importing Multiple Hosts Using KEY.txt File For Batch Configuration
+- Importing Multiple Hosts Using _KEY.txt_ File For Batch Configuration
 - Supermicro Update Manager ([SUM](https://www.supermicro.com/en/solutions/management-software/supermicro-update-manager)) Intergration For Batch BIOS Configuration & [OOB/DCMS](https://store.supermicro.com/us_en/software/software-license-key-activation-usage) License Activation
 - Added Logic For Error Checking And Accurate Results
 
