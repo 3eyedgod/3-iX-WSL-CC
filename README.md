@@ -7,7 +7,7 @@
 These scripts are used for Client Configuration (CC) and Sofware Quality Control (SWQC) to configure and validate system configuration based on iX Redbooks & customer needs
 
 - Automating Redbook Qualified Configuration
-- Increase The Number Of Systems That Can Go Through CC
+- Allowed for the increase in capacity without additional personel
 - Log And Archive Configuration Results
 - Gather System Information & Debug Files To Automate The SWQC Process
 
