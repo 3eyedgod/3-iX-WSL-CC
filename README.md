@@ -1,4 +1,4 @@
-# 𝟹-𝚒𝚇-𝚆𝚂𝙻-𝙹𝙶
+# 3-iX-WSL-JG
 
 ![IXSYSTEMS INC.](https://raw.githubusercontent.com/3eyedgod/3-iX-WSL-JG/main/IMAGES/iX_Logo.png)
 
