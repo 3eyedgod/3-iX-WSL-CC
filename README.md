@@ -73,7 +73,7 @@ Add the following aliases to .zshrc file
 ```zsh
 alias ixcc="cd ~/3-iX-WSL-CC;./3-iX-CC.sh"
 alias 1up="sudo hwclock -s && sudo apt-get update && sudo apt-get full-upgrade -y && sudo apt-get autoremove -y"
-alias sums="cd ~/3-iX-WSL-JG/SUMS/"
+alias sums="cd ~/3-iX-WSL-CC/SUMS/"
 alias oob="./sum -l OOB-LIC.txt -c ActivateProductKey"
 alias dcms="./sum -l DCMS-LIC.txt -c ActivateProductKey"
 ```
