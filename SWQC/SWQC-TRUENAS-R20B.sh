@@ -588,15 +588,14 @@ tar cfz "$SERIAL-SWQC-OUT.tar.gz" "$SERIAL"-SWQC-OUT/
 # Setting Up SJ-Storage For File Transfer
 
 echo "Mounting SJ-Storage"
-echo "[REPLACE_WITH_SERVER_ADDRESS:ROOT]" > ~/.nsmbrc
-echo "password=REPLACE_WITH_PASSWORD" >> ~/.nsmbrc
+echo "[REPLACE_WITH_SERVER_ADDRESS:ROOT]" >~/.nsmbrc
+echo "password=REPLACE_WITH_PASSWORD" >>~/.nsmbrc
 cat ~/.nsmbrc
 mkdir /mnt/sj-storage
 mount_smbfs -N -I REPLACE_WITH_SERVER_IP //root@REPLACE_WITH_SERVER_IP/sj-storage/ /mnt/sj-storage/ || mount -t cifs -o vers=3,username=root,password=REPLACE_WITH_PASSWORD '//REPLACE_WITH_SERVER_IP/sj-storage/' /mnt/sj-storage/
-cat /mnt/sj-storage/swqc-output/smbconnection-verified.txt >> swqc-tmp/swqc-output.txt
-cat /mnt/sj-storage/swqc-output/smbconnection-verified.txt > swqc-tmp/smb-verified.txt
+cat /mnt/sj-storage/swqc-output/smbconnection-verified.txt >>swqc-tmp/swqc-output.txt
+cat /mnt/sj-storage/swqc-output/smbconnection-verified.txt >swqc-tmp/smb-verified.txt
 echo "SJ-Storage Mounted"
-
 
 #########################################################################################################
 

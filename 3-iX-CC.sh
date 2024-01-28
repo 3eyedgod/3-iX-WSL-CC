@@ -243,7 +243,7 @@ Test Technician" 0 0
 	SEL-SDR-Diff)
 		clear
 		SEL-SDR-Diff
-		;;	
+		;;
 	VRSGN-AMD-CFG)
 		clear
 		VRSGN-AMD-1123US-TR4-V.08
