@@ -37,7 +37,7 @@ In order to run some scripts, Certain dependancies must be installed on the WSL 
 
 ## Setup
 
-[WSL](https://learn.microsoft.com/en-us/windows/wsl/install) must be installed in on any Windows PC
+[WSL](https://learn.microsoft.com/en-us/windows/wsl/install) must be installed on any Windows PC
 
 Open up a PowerShell command prompt (Run as Administrator) & type the following:
 ```powershell
