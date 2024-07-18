@@ -77,3 +77,9 @@ alias sums="cd ~/3-iX-WSL-CC/SUMS/"
 alias oob="./sum -l OOB-LIC.txt -c ActivateProductKey"
 alias dcms="./sum -l DCMS-LIC.txt -c ActivateProductKey"
 ```
+
+Making alias using sed
+```
+sed -i '/alias ohmyzsh="mate ~\/.oh-my-zsh"/a alias 1up="sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y"' ~/.zshrc
+```
+
